@@ -104,6 +104,14 @@ p {
   margin-bottom: 10px;
 }
 
+/* BRAND TITLE (Pacifico) */
+.brand-title {
+  font-family: 'Pacifico', cursive;
+  color: var(--accent);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
 /* ===========================
    CARD COMPONENT
    =========================== */
@@ -149,11 +157,4 @@ p {
 
 .spacer {
   height: 20px;
-}
-
-.brand-title {
-  font-family: 'Pacifico', cursive;
-  color: var(--accent);
-  font-size: 3rem;
-  margin-bottom: 10px;
 }
