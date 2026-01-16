@@ -34,50 +34,30 @@ body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  padding: 20px;
-}
-
-/* ===========================
-   TYPOGRAPHY
-   =========================== */
-h1, h2, h3 {
-  color: var(--text);
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  margin-bottom: 10px;
-}
-
-p {
-  color: var(--subtitle);
-  font-size: 1rem;
-  margin-bottom: 10px;
+  padding: 0;
 }
 
 /* ===========================
    NAVIGATION BAR
    =========================== */
 nav {
+  width: 100%;
   background: var(--card-bg);
   padding: 15px 20px;
-  border-radius: var(--radius);
   box-shadow: var(--shadow);
-  margin-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-
-nav .logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: -0.5px;
+  border-radius: 0 0 var(--radius) var(--radius);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 40px;
 }
 
 nav ul li a {
@@ -98,6 +78,22 @@ nav ul li a:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+}
+
+/* ===========================
+   TYPOGRAPHY
+   =========================== */
+h1, h2, h3 {
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--subtitle);
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 /* ===========================
