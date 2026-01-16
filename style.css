@@ -2,7 +2,6 @@
    THEME VARIABLES
    =========================== */
 :root {
-  /* Core Theme Colors */
   --bg: #0b0e14;
   --card-bg: #1a1f27;
   --card-hover: #232933;
@@ -10,7 +9,6 @@
   --text: #e5e5e5;
   --subtitle: #9aa0a6;
 
-  /* Motion + Shape */
   --transition-speed: 0.3s;
   --radius: 12px;
   --shadow: 0 0 14px rgba(0, 209, 255, 0.25);
@@ -34,7 +32,6 @@ body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  padding: 0;
 }
 
 /* ===========================
@@ -52,22 +49,33 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  position: relative;
 }
 
-nav ul {
+/* LEFT TITLE */
+.nav-left {
+  position: absolute;
+  left: 20px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+/* CENTERED NAV LINKS */
+.nav-center {
   list-style: none;
   display: flex;
   gap: 40px;
 }
 
-nav ul li a {
+.nav-center li a {
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
   transition: color var(--transition-speed);
 }
 
-nav ul li a:hover {
+.nav-center li a:hover {
   color: var(--accent);
 }
 
@@ -141,4 +149,11 @@ p {
 
 .spacer {
   height: 20px;
+}
+
+.brand-title {
+  font-family: 'Pacifico', cursive;
+  color: var(--accent);
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
